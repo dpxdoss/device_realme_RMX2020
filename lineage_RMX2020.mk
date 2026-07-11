@@ -26,6 +26,14 @@ PRODUCT_MANUFACTURER := realme
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# MistOS Build Flags
+MISTOS_MAINTAINER := "DantePaulXD"
+WITH_GMS := false
+TARGET_ENABLE_BLUR := false
+
+# MistOS Phone Definitions
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/phonedefinitions.prop
+
 # Sign-Keys
 include vendor/lineage-priv/keys/keys.mk
 
