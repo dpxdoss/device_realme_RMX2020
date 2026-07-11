@@ -29,6 +29,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Sign-Keys
 include vendor/lineage-priv/keys/keys.mk
 
+# Reseve Size
+include vendor/lineage/config/BoardConfigReservedSize.mk
+
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="RMX2020-user 11 RP1A.200720.011 1652239672541 release-keys" \
