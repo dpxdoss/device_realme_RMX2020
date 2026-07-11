@@ -313,7 +313,6 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayRMX2020 \
     Launcher3OverlayRMX2020 \
     LineageSDKOverlayRMX2020 \
-    LineageSettingsProviderOverlayRMX2020 \
     SettingsOverlayRMX2020 \
     SettingsProviderOverlayRMX2020 \
     SettingsProviderOverlayRMX2027 \
