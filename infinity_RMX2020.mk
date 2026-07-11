@@ -12,11 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common InfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX2020
+PRODUCT_NAME := infinity_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme Monet
@@ -26,11 +26,18 @@ PRODUCT_MANUFACTURER := realme
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Sign-Keys
-include vendor/lineage-priv/keys/keys.mk
+# Infinity Build Flags
+INFINITY_MAINTAINER := DantePaulXD
+WITH_GAPPS := false
 
-# Reseve Size
-include vendor/lineage/config/BoardConfigReservedSize.mk
+# Infinity Phone Definitions
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/phonedefinitions.prop
+
+# Infinity Sign-Keys
+include vendor/infinity-priv/keys/keys.mk
+
+# Reserve Size
+include vendor/infinity/config/BoardConfigReservedSize.mk
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
