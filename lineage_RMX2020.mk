@@ -12,15 +12,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common crDroid stuff.
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := RMX2020
+PRODUCT_MODEL := Realme Monet
 PRODUCT_MANUFACTURER := realme
+
+# Common flags
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Sign-Keys
+include vendor/lineage-priv/keys/keys.mk
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
