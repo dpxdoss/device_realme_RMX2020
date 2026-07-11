@@ -1,0 +1,9 @@
+# About Phone
+ro.mist.display=720 x 1600 274dpi 60HZ HD Plus
+ro.mist.battery=5000mah typical / 6000mah typical
+ro.mist.soc=Mediatek® Helio G-Series 8c 2.0GHz
+ro.mist.camera=12MP-48MP Ai Lens
+ro.mist.front=5MP-16MP HDR Lens
+ro.mist.platform=MT6768V/CB / MT6769V/Z/T
+ro.mist.screen=6.50' Mini-drop Punch-hole LCD
+ro.mist.device.name=Reale Monet Series
