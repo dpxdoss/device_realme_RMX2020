@@ -104,7 +104,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.RMX2020
+    android.hardware.biometrics.fingerprint@2.1-service.
 
 # FM Radio
 PRODUCT_PACKAGES += \
@@ -150,7 +150,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/mediatek-telephony-common.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/mediatek-telephony-common.xml
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_RMX2020)
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_)
 
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
@@ -313,7 +313,6 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayRMX2020 \
     Launcher3OverlayRMX2020 \
     LineageSDKOverlayRMX2020 \
-    LineageSettingsProviderOverlayRMX2020 \
     SettingsOverlayRMX2020 \
     SettingsProviderOverlayRMX2020 \
     SettingsProviderOverlayRMX2027 \
