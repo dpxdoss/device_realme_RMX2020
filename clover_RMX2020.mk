@@ -12,11 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Clover stuff.
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX2020
+PRODUCT_NAME := clover_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme Monet
@@ -26,11 +26,16 @@ PRODUCT_MANUFACTURER := realme
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Build Flags
+CLOVER_MAINTAINER := DantePaulXD
+TARGET_ENABLE_BLUR := false
+WITH_GMS := false
+
 # Sign-Keys
-include vendor/lineage-priv/keys/keys.mk
+include vendor/clover-priv/keys/keys.mk
 
 # Reseve Size
-include vendor/lineage/config/BoardConfigReservedSize.mk
+include vendor/clover/config/BoardConfigReservedSize.mk
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
