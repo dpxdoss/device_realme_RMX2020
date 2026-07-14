@@ -32,7 +32,7 @@ TARGET_ENABLE_BLUR := false
 WITH_GMS := false
 
 # Sign-Keys
-include vendor/clover-priv/keys/keys.mk
+include vendor/lineage-priv/keys/keys.mk
 
 # Reseve Size
 include vendor/clover/config/BoardConfigReservedSize.mk
