@@ -34,7 +34,6 @@ TARGET_HAS_UDFPS := false
 TARGET_INCLUDE_BOOT_ANIMATIONS := false
 TARGET_DISABLE_EPPE := true
 TARGET_INCLUDE_ACCORD := true
-TARGET_INCLUDE_VIPERFX := true
 TARGET_ENABLE_BLUR := false
 
 # Sign-Keys
@@ -42,6 +41,9 @@ include vendor/evolution-priv/keys/keys.mk
 
 # Reseve Size
 include vendor/lineage/config/BoardConfigReservedSize.mk
+
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
