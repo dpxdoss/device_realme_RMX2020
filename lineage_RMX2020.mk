@@ -41,7 +41,7 @@ TARGET_ENABLE_BLUR := false
 include vendor/evolution-priv/keys/keys.mk
 
 # Reseve Size
-include vendor/evolution/config/BoardConfigReservedSize.mk
+include vendor/evolution/lineage/BoardConfigReservedSize.mk
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
