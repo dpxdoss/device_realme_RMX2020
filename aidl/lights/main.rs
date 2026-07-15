@@ -35,7 +35,7 @@ fn main() {
         panic!("{LOG_TAG}: Failed to start logger.");
     }
 
-    binder::ProcessState::set_thread_pool_max_thread_count(0);
+    binder::ProcessState::set_thread_pool_max_thread_count(1);
 
     let lights_service = LightsService::default();
     let lights_service_binder = BnLights::new_binder(lights_service, BinderFeatures::default());
