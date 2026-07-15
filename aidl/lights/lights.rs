@@ -141,7 +141,7 @@ impl LightsService {
 impl Default for LightsService {
     fn default() -> Self {
         let id_mapping = |light_id| HwLight { id: light_id, ordinal: light_id, r#type: LightType::BACKLIGHT };
-        Self::new((1..=NUM_DEFAULT_LIGHTS).map(id_mapping))
+        Self::new((0..=NUM_DEFAULT_LIGHTS).map(id_mapping))
     }
 }
 
