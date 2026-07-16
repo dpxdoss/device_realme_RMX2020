@@ -48,7 +48,7 @@ ro.build.display.wtid.monetx.mp=SW_S98675AA1_V010_M10_R_USRD_MP
 ro.build.display.wtid.mp=SW_S98670AA1_V010_USRD_TEST
 
 # LMKD
-ro.config.low_ram=true
+ro.config.low_ram=false
 ro.lmk.log_stats=false
 
 # Order
